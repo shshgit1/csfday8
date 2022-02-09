@@ -1,0 +1,10 @@
+<h1>Add to do</h1>
+<form [formGroup]="groupedform">
+Title : <input type="text" formControlName="taskentry">
+<br><br>
+Due date : <input type="text" formControlName="duedateentry">
+<p></p>
+
+<button type="submit" [routerLink]="['']">Back</button>
+<button type="submit" (click)="onAdd()">Add</button>
+</form>

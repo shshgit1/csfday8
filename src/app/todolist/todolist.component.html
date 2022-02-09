@@ -1,0 +1,6 @@
+<p>todolist works!</p>
+<div *ngFor="let x of todoListfromstorage|keyvalue">
+<a [routerLink]="['todo',x.key]"> {{x.key}}</a>
+</div>
+<p></p>
+<button type="submit"[routerLink]="['add']">Add task</button>
